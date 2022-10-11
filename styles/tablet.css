@@ -1,0 +1,100 @@
+@media only screen and (min-width: 576px) and (max-width: 990px) {
+    #menu{
+        display: hide;
+    }
+
+    .container{
+        max-width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* HEADER */
+    header .container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0;
+    }
+    .nav ul{
+        display: flex;
+        flex-direction: row;
+    }
+    .nav li{
+        margin: 0 4px;
+    }
+    .nav a{
+        color: var(--color-dark-grey);
+        text-decoration: none;
+    }
+    .nav a:hover{
+        color: var(--color-light);
+    }
+    .logo__title{
+        display: none;
+    }
+    /* MAIN */
+   
+    .main .container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 60px 60px 1fr;
+    }
+    .main__title{
+        font-size: var(--size-ttf-b); 
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+        justify-self: flex-start;
+        align-self: center;
+        padding-left: 8px;
+    }
+    .main__sub-title{
+        font-size: var(--size-ttf-s);
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    .main img{
+        grid-column: 2 / 3;
+        grid-row: 1 / 4;
+    }
+    .main__description{
+        align-self: center;
+        font-size: var(--size-paragraphs);
+        padding: 0 16px;
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    /* SKILL */
+
+
+    /* FORMACION */
+    .formacion__card img{
+        width: 20%;
+    }
+
+    /* PROYECTOS */
+    .proyecto img{
+        width: 40%;
+    }
+
+    /* CONTACTO */
+    .contacto .container{
+        align-items: center;
+    }
+    .contacto__form{
+        max-width: 560px;
+    }
+    /* R SOCIALES */
+    .redes-sociales .container{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .redes-sociales a{
+        max-width: 50%;
+    }
+    .redes-sociales img{
+        width: 15%;
+    }
+}
+

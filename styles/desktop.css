@@ -1,0 +1,151 @@
+@media only screen and (min-width: 991px) {
+    body{
+        margin: 0 auto;
+    }
+
+    .container{
+        max-width: 1040px;
+        border: none;
+        /* max-width: 80%; */
+    }
+    
+    /* HEADER */
+    header .container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0;
+    }
+    .nav ul{
+        display: flex;
+        flex-direction: row;
+    }
+    .nav li{
+        margin: 0 8px;
+    }
+    .nav a{
+        color: var(--color-dark-grey);
+        text-decoration: none;
+    }
+    .nav a:hover{
+        color: var(--color-light);
+    }
+    .logo__title{
+        display: none;
+    }
+
+    /* MAIN */
+    .main .container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 60px 60px 1fr;
+    }
+    .main__title{
+        font-size: var(--size-main-title); 
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+        justify-self: flex-start;
+        align-self: center;
+        padding-left: 64px;
+    }
+    .main__sub-title{
+        font-size: var(--size-ttf-b);
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    .main img{
+        width: 60%;
+        grid-column: 2 / 3;
+        grid-row: 1 / 4;
+    }
+    .main__description{
+        align-self: center;
+        font-size: var(--size-paragraphs);
+        padding: 0 32px;
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    /* SKILLS */
+
+    /* FORMACION */
+
+    .formacion{
+        display: flex;
+        flex-flow: column;
+    }
+
+    .formacion .container{
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start
+    }
+
+    .formacion__card img{
+        max-width: 300px;
+        /* width: 20%; */
+    }
+    .udemy img {
+        width: 20%;
+    }
+
+    /* PROYECTOS */
+
+    .proyectos .container{
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .proyecto{
+        max-width: 300px;
+        height: 410px;
+        padding: 8px 0;
+    }
+
+    .frontend-img{
+        max-width: 100px;
+    }
+
+    /* CONTACTO */
+
+    .contacto .container{
+        display: flex;
+        justify-content: center;
+    }
+
+    .contacto__content,
+    .contacto__form{
+        width: 45%;
+        margin: 16px 8px;
+    }
+    
+    .contacto__sub-title{
+        font-size: var(--size-ttf-s);
+        margin-bottom: 16px;
+    }
+
+    .contacto__text{
+        font-size: var(--size-bttf-s);
+    }
+
+    /* R SOCIALES */
+    .redes-sociales{
+        position: fixed;
+        top: 35%;
+        left: 0;
+        width: 90px;
+    }
+    .redes-sociales .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .redes-sociales img{
+        padding: 8px 0;
+        width: 50%;
+    }
+}
