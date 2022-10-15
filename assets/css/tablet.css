@@ -69,8 +69,11 @@
 
 
     /* FORMACION */
+    .formacion .container{
+        flex-direction: row
+    }
     .formacion__card img{
-        width: 20%;
+        width: 40%;
     }
 
     /* PROYECTOS */
