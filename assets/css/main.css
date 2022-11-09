@@ -32,7 +32,8 @@
         desktop: min 1024px;
         tablet: min 768px; 
         mobile: min 360px;
-     */
+    */
+    scroll-behavior: smooth;
 }
 
 body{
@@ -162,11 +163,13 @@ h1{
     padding: 8px 0;
 }
 .formacion__card img{
+    padding-bottom: 8px;
     width: 50%;
 }
 
 .formacion__card figcaption,
 .formacion__card-description{
+    text-align: left;
     font-size: var(--size-paragraphs);
     font-weight: var(--font-weight-light);
     max-width: 80%;
