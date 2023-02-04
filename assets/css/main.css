@@ -34,6 +34,7 @@
         mobile: min 360px;
     */
     scroll-behavior: smooth;
+    line-height: 1.1rem;
 }
 
 body{
@@ -48,6 +49,15 @@ body{
     max-width: calc(100% - 32px);
     margin: 0 auto;
     padding: 16px 0;
+}
+
+img{
+    width: 30%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+}
+main img{
+    aspect-ratio: 2/2;
 }
 
 /* HEADER */
@@ -234,14 +244,23 @@ h1{
 }
 
 .contacto__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-size: var(--size-bttf-s);
     font-weight: var(--font-weight-light);
     padding: 8px 0;
     text-align: left;
 }
-.contacto__link{
+.contacto__link,
+.contacto__btn-cv a{
     text-decoration: none;
     color: var(--color-dark);
+}
+
+.contacto__btn-cv{
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .contacto__form{
